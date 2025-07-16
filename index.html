@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Confession Journal</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>Confession Journal</h1>
+<p class="tagline">Speak freely. Nobody’s watching.</p>
+<div id="themeSelector">
+<button data-theme="pink">🩷 Pink</button>
+<button data-theme="dark">🖤 Dark</button>
+<button data-theme="gray">🩶 Gray</button>
+<button data-theme="rainbow">🌈 Rainbow</button>
+</div>
+</header>
+
+<section id="confessionSection">
+<form id="confessionForm">
+<textarea maxlength="200" placeholder="Share your secret... (200 characters max)" required></textarea>
+<p id="charCount">0/200</p>
+<select id="category">
+<option value="Trending">Trending</option>
+<option value="Sad">Sad</option>
+<option value="Funny">Funny</option>
+<option value="NSFW">NSFW</option>
+</select>
+<input type="file" id="confessionImage" accept="image/*">
+
+<button type="submit">Submit Confession</button>
+</form>
+
+<div id="confessionFeed"></div>
+</section>
+
+<footer>
+<p>Want more themes? 🔓 Premium packs coming soon.</p>
+<div id="adSpace">[Ad Placeholder]</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<div id="filterBar">
+<button data-filter="All">All</button>
+<button data-filter="Trending">Trending</button>
+<button data-filter="Sad">Sad</button>
+<button data-filter="Funny">Funny</button>
+<button data-filter="NSFW">NSFW</button>
+</div>
